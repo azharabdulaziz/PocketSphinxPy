@@ -42,7 +42,6 @@ for currentModel in AcModel:
     decoder = Decoder(config)
     
     # Start reading Test list
-    print "Decoding Test Audio Files"
     # SNR_Level = ["wav", "wavWhite5db",]
     for snr in range(0, 55, 5):
         if snr == 0:
@@ -53,10 +52,8 @@ for currentModel in AcModel:
             ExpWavPath = BaseWavPath + "wavWhite" + str(snr) + "db/"
             outDir = BaseDir+"Results/Noisy_" + str(snr) + "db/" + currentModel + "/"
             wavext = ".wav"
-        print ExpWavPath
+            
         # Check for exist outdir
-        print "Output Dir: " + outDir
-        
         if not os.path.exists(os.path.dirname(outDir)):
             try:
                 os.makedirs(os.path.dirname(outDir))
@@ -73,7 +70,6 @@ for currentModel in AcModel:
                     raise            
         # Start reading Test list
         print "Decoding Test Audio Files for " + ExpWavPath
-        i = 0
         with open(TestFileIds) as fp:
             FinalResult = {}
             ListOfFinalResults = []
@@ -101,19 +97,15 @@ for currentModel in AcModel:
                 # print 'Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", hypothesis.prob
                 decoder.get_lattice().write(outLattice + fNameOnly + '.lat')
                 decoder.get_lattice().write_htk(outLattice + fNameOnly + '.htk')
-                i = i + 1
-                completed = (i / TotalNoOfFiles)
-                s = "Processing " + str(completed) + " %"
                 sys.stdout.write("*")
         # Running perl WER test
         print "\n"
-        dump.TextWrite(HypText, outDir + currentModel)
-        dump.CSVDictWrite(ListOfFinalResults, outDir + "/All_" + currentModel)
-        hypFile = outDir + currentModel + ".txt" 
-        RefFile = BaseDir + "RefClean.txt"
-        out_File = outDir + currentModel + ".txt"
-        print "Hype File: " + hypFile
-        print "Reference File: " + RefFile
-        perl_script = subprocess.Popen(["perl", "./word_align.pl", hypFile, RefFile, out_File])
-        # print perl_script.poll()
-    
+        
+        dump.TextWrite(HypText, outDir+currentModel+".txt")
+        dump.CSVDictWrite(ListOfFinalResults, outDir+"/All_"+currentModel+".csv")
+        hypFile = outDir+currentModel+".txt" 
+        RefFile = BaseDir+"RefClean.txt"
+        out_File = outDir+"WERReslts_"+currentModel+".txt"
+        perl_script = subprocess.Popen(["perl", "./word_align.pl",hypFile, RefFile, out_File])
+        perl_script.wait()
+        print '\n'

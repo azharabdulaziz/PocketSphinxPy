@@ -125,12 +125,13 @@ for snr in range(0,55,5):
             sys.stdout.write("*")
     # Running perl WER test
     print "\n"
-    dump.TextWrite(HypText, outHypo+currentModel)
-    dump.CSVDictWrite(ListOfFinalResults, outDir+"/All_"+currentModel)
+    dump.TextWrite(HypText, outHypo+currentModel+".txt")
+    dump.CSVDictWrite(ListOfFinalResults, outDir+"/All_"+currentModel+".csv")
     hypFile = outHypo+currentModel+".txt" 
     RefFile = BaseDir+"RefClean.txt"
     out_File = outWerRes+currentModel+".txt"
     perl_script = subprocess.Popen(["perl", "./word_align.pl",hypFile, RefFile, out_File])
+    perl_script.wait()
     #print perl_script.poll()
          
             
