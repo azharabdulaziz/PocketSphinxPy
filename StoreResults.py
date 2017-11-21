@@ -9,7 +9,6 @@ def CSVDictWrite(Hyp,CSVfileName):
             wr.writerows(Hyp)
 
 def TextWrite(HypList, FileName):
-    print "Storing file: " + FileName
     with open(FileName, mode = 'wt' ) as myfile:
         for i in HypList:
             myfile.write(i)

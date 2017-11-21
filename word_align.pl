@@ -145,8 +145,8 @@ while (defined(my $ref_utt = <REF>)) {
 # Print out the total word error and accuracy rates
 my $error = $total_cost/$total_words;
 my $acc = $total_match/$total_words;
-printf("TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100) if not $Silent;
-print "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n" if not $Silent;
+printf("TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100);
+print "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n";
 
 printf out_file "TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100; # print to file
 print out_file "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n"; # print to file
