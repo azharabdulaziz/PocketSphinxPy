@@ -10,7 +10,7 @@
 use strict;
 use Getopt::Long;
 use Pod::Usage;
-use vars qw($Verbose $CER $IgnoreUttID);
+use vars qw($Verbose $CER $IgnoreUttID $Silent);
 #use encoding 'utf8';
 
 my ($help,%hyphash);
@@ -20,6 +20,7 @@ GetOptions(
 	   'verbose|v' => \$Verbose,
 	   'cer|c' => \$CER,
 	   'ignore-uttid|i' => \$IgnoreUttID,
+	   'silent|s' => \$Silent,
 	  ) or pod2usage(1);
 pod2usage(1) if $help;
 
@@ -120,7 +121,7 @@ while (defined(my $ref_utt = <REF>)) {
 	$ref_align .= sprintf("%-*s ", $width, $ref);
 	$hyp_align .= sprintf("%-*s ", $width, $hyp);
     }
-    print "$ref_align ($ref_uttid)\n$hyp_align ($hyp_uttid)\n";
+    print "$ref_align ($ref_uttid)\n$hyp_align ($hyp_uttid)\n" if not $Silent;
     
     print out_file "$ref_align ($ref_uttid)\n$hyp_align ($hyp_uttid)\n"; # print to file
 
@@ -128,8 +129,8 @@ while (defined(my $ref_utt = <REF>)) {
     my $error = @ref_words == 0 ? 1 : $cost/@ref_words;
     my $acc = @ref_words == 0 ? 0 : $match/@ref_words;
     printf("Words: %d Correct: %d Errors: %d Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n",
-	   scalar(@ref_words), $match, $cost, $acc*100, $error*100, 100-$error*100);
-    print "Insertions: $ins Deletions: $del Substitutions: $subst\n";
+	   scalar(@ref_words), $match, $cost, $acc*100, $error*100, 100-$error*100) if not $Silent;
+    print "Insertions: $ins Deletions: $del Substitutions: $subst\n" if not $Silent;
     
     printf out_file "Words: %d Correct: %d Errors: %d Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n",scalar(@ref_words), $match, $cost, $acc*100, $error*100, 100-$error*100; # print to file
     print out_file "Insertions: $ins Deletions: $del Substitutions: $subst\n"; # print to file
@@ -144,8 +145,8 @@ while (defined(my $ref_utt = <REF>)) {
 # Print out the total word error and accuracy rates
 my $error = $total_cost/$total_words;
 my $acc = $total_match/$total_words;
-printf("TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100);
-print "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n";
+printf("TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100) if not $Silent;
+print "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n" if not $Silent;
 
 printf out_file "TOTAL Words: %d Correct: %d Errors: %d\nTOTAL Percent correct = %.2f%% Error = %.2f%% Accuracy = %.2f%%\n", $total_words, $total_match, $total_cost, $acc*100, $error*100, 100-$error*100; # print to file
 print out_file "TOTAL Insertions: $total_ins Deletions: $total_del Substitutions: $total_subst\n"; # print to file
@@ -213,10 +214,13 @@ sub align {
 	    $ins = $$align_matrix[$i][$j-1] + 1;
 	    $del = $$align_matrix[$i-1][$j] + 1;
 	    $subst = $$align_matrix[$i-1][$j-1] + $cost;
-	    print "Costs at $i $j: INS $ins DEL $del SUBST $subst\n" if $Verbose;
-
-        print out_file "Costs at $i $j: INS $ins DEL $del SUBST $subst\n" if $Verbose; # print to file
-        
+	    
+	    if(not $Silent){
+	    		print "Costs at $i $j: INS $ins DEL $del SUBST $subst\n" if $Verbose;
+        		print out_file "Costs at $i $j: INS $ins DEL $del SUBST $subst\n" if $Verbose; # print to file
+	
+	    	}
+	            
 	    # Get the minimum one
 	    my $min = BIG_NUMBER;
 	    foreach ($ins, $del, $subst) {
@@ -229,20 +233,28 @@ sub align {
 	    # If the costs are equal, prefer match or substitution
 	    # (keep the path diagonal).
 	    if ($min == $subst) {
-		print(($cost ? "SUBSTITUTION" : "MATCH"),"($$ref_words[$i-1] <=> $$hyp_words[$j-1])\n") if $Verbose;
-        
-            #print out_file ($cost ? "SUBSTITUTION" : "MATCH"),"($$ref_words[$i-1] <=> $$hyp_words[$j-1])\n" if $Verbose   # print to file
-        
+	    	if(not $Silent){
+	    			print(($cost ? "SUBSTITUTION" : "MATCH"),"($$ref_words[$i-1] <=> $$hyp_words[$j-1])\n") if $Verbose;
+        			print out_file ($cost ? "SUBSTITUTION" : "MATCH"),"($$ref_words[$i-1] <=> $$hyp_words[$j-1])\n" if $Verbose   # print to file
+        		}
+		
 		$$backtrace_matrix[$i][$j] = MATCH+$cost;
 	    }
 	    elsif ($min == $ins) {
-		print "INSERTION (0 => $$hyp_words[$j-1])\n" if $Verbose;
-        print out_file "INSERTION (0 => $$hyp_words[$j-1])\n" if $Verbose;  # print to file
+	    	if(not $Silent){
+	    		print "INSERTION (0 => $$hyp_words[$j-1])\n" if $Verbose;
+	        print out_file "INSERTION (0 => $$hyp_words[$j-1])\n" if $Verbose;  # print to file
+	
+	    		}
+				
 		$$backtrace_matrix[$i][$j] = INS;
 	    }
 	    elsif ($min == $del) {
-		print "DELETION ($$ref_words[$i-1] => 0)\n" if $Verbose;
-        print out_file "DELETION ($$ref_words[$i-1] => 0)\n" if $Verbose;  # print to file
+	    		if(not $Silent){
+					print "DELETION ($$ref_words[$i-1] => 0)\n" if $Verbose;
+			        print out_file "DELETION ($$ref_words[$i-1] => 0)\n" if $Verbose;  # print to file
+	    			
+	    			}
 		$$backtrace_matrix[$i][$j] = DEL;
 	    }
 	}
@@ -260,51 +272,81 @@ sub backtrace {
     my ($inspen, $delpen, $substpen, $match) = (0,0,0,0);
     while (!($i == 0 and $j == 0)) {
 	my $pointer = $$backtrace_matrix[$i][$j];
-	print "Cost at $i $j: $$align_matrix[$i][$j]\n"  if $Verbose;
-    print out_file "Cost at $i $j: $$align_matrix[$i][$j]\n"  if $Verbose;  # print to file
+	
+	if(not $Silent){
+		print "Cost at $i $j: $$align_matrix[$i][$j]\n"  if $Verbose;
+    		print out_file "Cost at $i $j: $$align_matrix[$i][$j]\n"  if $Verbose;  # print to file	
+		}
+	
 	if ($pointer == INS) {
-	    print "INSERTION (0 => $$hyp_words[$j-1])" if $Verbose;
-        print out_file "INSERTION (0 => $$hyp_words[$j-1])" if $Verbose;  # print to file
+		if(not $Silent){
+				print "INSERTION (0 => $$hyp_words[$j-1])" if $Verbose;
+        			print out_file "INSERTION (0 => $$hyp_words[$j-1])" if $Verbose;  # print to file	
+			}
+	    
         
 	    # Append the pair 0:hyp[j] to the front of the alignment
 	    unshift @alignment, [undef, $$hyp_words[$j-1]];
 	    ++$inspen;
 	    --$j;
-	    print " - moving to $i $j\n" if $Verbose;
-        print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    
+	    if(not $Silent){
+	    		print " - moving to $i $j\n" if $Verbose;
+        		print out_file " - moving to $i $j\n" if $Verbose;  # print to file	
+	    }
+	    
 	}
 	elsif ($pointer == DEL) {
-	    print "DELETION ($$ref_words[$i-1] => 0)" if $Verbose;
-        print out_file "DELETION ($$ref_words[$i-1] => 0)" if $Verbose;  # print to file
+		if(not $Silent){
+				print "DELETION ($$ref_words[$i-1] => 0)" if $Verbose;
+        			print out_file "DELETION ($$ref_words[$i-1] => 0)" if $Verbose;  # print to file	
+			}
+	    
         
 	    # Append the pair ref[i]:0 to the front of the alignment
 	    unshift @alignment, [$$ref_words[$i-1], undef];
 	    ++$delpen;
 	    --$i;
-	    print " - moving to $i $j\n" if $Verbose;
-        print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    if(not $Silent){
+	    			print " - moving to $i $j\n" if $Verbose;
+        			print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    	}
+	    
 	}
 	elsif ($pointer == MATCH) {
-	    print "MATCH ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;
-        print out_file "MATCH ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose; # print to file
+		if(not $Silent){
+				print "MATCH ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;
+        			print out_file "MATCH ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose; # print to file	
+		}
+	    
 	    # Append the pair ref[i]:hyp[j] to the front of the alignment
 	    unshift @alignment, [$$ref_words[$i-1], $$hyp_words[$j-1]];
 	    ++$match;
 	    --$j;
 	    --$i;
-	    print " - moving to $i $j\n" if $Verbose;
-        print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    if(not $Silent){
+	    			print " - moving to $i $j\n" if $Verbose;
+        			print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    	}
+	    
+	    
 	}
 	elsif ($pointer == SUBST) {
-	    print "SUBSTITUTION ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;
-        print out_file "SUBSTITUTION ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;  # print to file
+		if(not $Silent){
+				print "SUBSTITUTION ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;
+        			print out_file "SUBSTITUTION ($$ref_words[$i-1] <=> $$hyp_words[$j-1])" if $Verbose;  # print to file	
+			}
+	    
 	    # Append the pair ref[i]:hyp[j] to the front of the alignment
 	    unshift @alignment, [$$ref_words[$i-1], $$hyp_words[$j-1]];
 	    ++$substpen;
 	    --$j;
 	    --$i;
-	    print " - moving to $i $j\n" if $Verbose;
-        print out_file " - moving to $i $j\n" if $Verbose;  # print to file
+	    if(not $Silent){
+	    		print " - moving to $i $j\n" if $Verbose;
+        		print out_file " - moving to $i $j\n" if $Verbose;  # print to file	
+	    }
+	    
 	}
 	else {
 	    last;

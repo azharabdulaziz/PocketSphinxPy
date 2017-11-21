@@ -1,0 +1,523 @@
+A   L   A      g   A   N   e   S   FIFTY nine  (FCAW-AN406-FCAW-B)
+*** *** RUBOUT g   *** M   e   F   THREE nine  (FCAW-AN406-FCAW-B)
+Words: 10 Correct: 3 Errors: 7 Percent correct = 30.00% Error = 70.00% Accuracy = 30.00%
+Insertions: 0 Deletions: 3 Substitutions: 4
+erase c   q   q   f   seven  (FCAW-AN407-FCAW-B)
+erase c   q   q   f   seven  (FCAW-AN407-FCAW-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+P   a   o   z   five three  (FCAW-AN408-FCAW-B)
+B   a   o   z   five three  (FCAW-AN408-FCAW-B)
+Words: 6 Correct: 5 Errors: 1 Percent correct = 83.33% Error = 16.67% Accuracy = 83.33%
+Insertions: 0 Deletions: 0 Substitutions: 1
+L    (FCAW-AN409-FCAW-B)
+GO   (FCAW-AN409-FCAW-B)
+Words: 1 Correct: 0 Errors: 1 Percent correct = 0.00% Error = 100.00% Accuracy = 0.00%
+Insertions: 0 Deletions: 0 Substitutions: 1
+M   rubout n   i   m   n   one  (FCAW-AN410-FCAW-B)
+*** rubout n   i   m   n   one  (FCAW-AN410-FCAW-B)
+Words: 7 Correct: 6 Errors: 1 Percent correct = 85.71% Error = 14.29% Accuracy = 85.71%
+Insertions: 0 Deletions: 1 Substitutions: 0
+w   o   o   d   A    (FCAW-CEN1-FCAW-B)
+w   o   o   d   ***  (FCAW-CEN1-FCAW-B)
+Words: 5 Correct: 4 Errors: 1 Percent correct = 80.00% Error = 20.00% Accuracy = 80.00%
+Insertions: 0 Deletions: 1 Substitutions: 0
+c   i   E   d   A   y    (FCAW-CEN2-FCAW-B)
+c   i   N   d   *** y    (FCAW-CEN2-FCAW-B)
+Words: 6 Correct: 4 Errors: 2 Percent correct = 66.67% Error = 33.33% Accuracy = 66.67%
+Insertions: 0 Deletions: 1 Substitutions: 1
+one three seven  (FCAW-CEN3-FCAW-B)
+one three seven  (FCAW-CEN3-FCAW-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+N   E   T   e   l   v   i   M    (FCAW-CEN4-FCAW-B)
+*** *** M   e   l   v   i   N    (FCAW-CEN4-FCAW-B)
+Words: 8 Correct: 4 Errors: 4 Percent correct = 50.00% Error = 50.00% Accuracy = 50.00%
+Insertions: 0 Deletions: 2 Substitutions: 2
+p   l   e   a   s   a   n   E   t   h   i   l   l   s    (FCAW-CEN5-FCAW-B)
+p   l   e   a   s   a   n   *** t   h   i   l   l   s    (FCAW-CEN5-FCAW-B)
+Words: 14 Correct: 13 Errors: 1 Percent correct = 92.86% Error = 7.14% Accuracy = 92.86%
+Insertions: 0 Deletions: 1 Substitutions: 0
+one five two three six  (FCAW-CEN6-FCAW-B)
+one five two three six  (FCAW-CEN6-FCAW-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+six five five eight seven four C   M     (FCAW-CEN7-FCAW-B)
+six five five eight seven four *** ZERO  (FCAW-CEN7-FCAW-B)
+Words: 8 Correct: 6 Errors: 2 Percent correct = 75.00% Error = 25.00% Accuracy = 75.00%
+Insertions: 0 Deletions: 1 Substitutions: 1
+eleven twenty seven fifty seven  (FCAW-CEN8-FCAW-B)
+eleven twenty seven fifty seven  (FCAW-CEN8-FCAW-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+L    (FJLP-AN416-FJLP-B)
+NO   (FJLP-AN416-FJLP-B)
+Words: 1 Correct: 0 Errors: 1 Percent correct = 0.00% Error = 100.00% Accuracy = 0.00%
+Insertions: 0 Deletions: 0 Substitutions: 1
+enter nine one six nine  (FJLP-AN417-FJLP-B)
+enter nine one six nine  (FJLP-AN417-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter eight ninety seven  (FJLP-AN418-FJLP-B)
+enter eight ninety seven  (FJLP-AN418-FJLP-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+j   p   e   g   four  (FJLP-AN419-FJLP-B)
+j   p   e   g   four  (FJLP-AN419-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase x   a   g   n   a   six thirty five  (FJLP-AN420-FJLP-B)
+erase x   a   g   n   a   six thirty five  (FJLP-AN420-FJLP-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   a   t   t   e   r   s   o   n    (FJLP-CEN1-FJLP-B)
+p   a   t   t   e   r   s   o   n    (FJLP-CEN1-FJLP-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+j   a   n   e   t    (FJLP-CEN2-FJLP-B)
+j   a   n   e   t    (FJLP-CEN2-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one fifty  (FJLP-CEN3-FJLP-B)
+one fifty  (FJLP-CEN3-FJLP-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+s   p   e   e   r    (FJLP-CEN4-FJLP-B)
+s   p   e   e   r    (FJLP-CEN4-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+m   c   k   e   e   s   r   o   c   k   s    (FJLP-CEN5-FJLP-B)
+m   c   k   e   e   s   r   o   c   k   s    (FJLP-CEN5-FJLP-B)
+Words: 11 Correct: 11 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five one three six  (FJLP-CEN6-FJLP-B)
+one five one three six  (FJLP-CEN6-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+three three one oh  one eight eight  (FJLP-CEN7-FJLP-B)
+three three one oh  one eight eight  (FJLP-CEN7-FJLP-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+twelve twenty nine fifty nine  (FJLP-CEN8-FJLP-B)
+twelve twenty nine fifty nine  (FJLP-CEN8-FJLP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter nine two eight  (FVAP-AN426-FVAP-B)
+enter nine two eight  (FVAP-AN426-FVAP-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase e   d   z   e   fifty six  (FVAP-AN427-FVAP-B)
+erase e   d   z   e   fifty six  (FVAP-AN427-FVAP-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter eight thirteen  (FVAP-AN428-FVAP-B)
+enter eight thirteen  (FVAP-AN428-FVAP-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+rubout e   y   f   c   x   four  (FVAP-AN429-FVAP-B)
+rubout e   y   f   c   x   four  (FVAP-AN429-FVAP-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+r   h   n   g   a   fifty four eighty three  (FVAP-AN430-FVAP-B)
+r   h   n   g   a   fifty four eighty three  (FVAP-AN430-FVAP-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   o   w   e   l   l    (FVAP-CEN1-FVAP-B)
+p   o   w   e   l   l    (FVAP-CEN1-FVAP-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+v   a   n   e   s   s   a    (FVAP-CEN2-FVAP-B)
+v   a   n   e   s   s   a    (FVAP-CEN2-FVAP-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+three zero two one  (FVAP-CEN3-FVAP-B)
+three zero two one  (FVAP-CEN3-FVAP-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+w   i   l   l   e   t   t    (FVAP-CEN4-FVAP-B)
+w   i   l   l   e   t   t    (FVAP-CEN4-FVAP-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+b   r   e   n   t   w   o   o   d    (FVAP-CEN5-FVAP-B)
+b   r   e   n   t   w   o   o   d    (FVAP-CEN5-FVAP-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two two seven  (FVAP-CEN6-FVAP-B)
+one five two two seven  (FVAP-CEN6-FVAP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+***   eight four three six four eight  (FVAP-CEN7-FVAP-B)
+EIGHT eight four three six four eight  (FVAP-CEN7-FVAP-B)
+Words: 6 Correct: 6 Errors: 1 Percent correct = 100.00% Error = 16.67% Accuracy = 83.33%
+Insertions: 1 Deletions: 0 Substitutions: 0
+ten twenty seven sixty two  (FVAP-CEN8-FVAP-B)
+ten twenty seven sixty two  (FVAP-CEN8-FVAP-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+rubout n   s   v   h   t   six forty nine  (MARH-AN431-MARH-B)
+rubout n   s   v   h   t   six forty nine  (MARH-AN431-MARH-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+x   n   k   A   u   F   eight  (MARH-AN432-MARH-B)
+x   n   k   *** u   *** eight  (MARH-AN432-MARH-B)
+Words: 7 Correct: 5 Errors: 2 Percent correct = 71.43% Error = 28.57% Accuracy = 71.43%
+Insertions: 0 Deletions: 2 Substitutions: 0
+enter four five eight two one  (MARH-AN433-MARH-B)
+enter four five eight two one  (MARH-AN433-MARH-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase p   q   y   v   t   five ninety eight  (MARH-AN434-MARH-B)
+erase p   q   y   v   t   five ninety eight  (MARH-AN434-MARH-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter two eighteen  (MARH-AN435-MARH-B)
+enter two eighteen  (MARH-AN435-MARH-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+h   o   u   s   e   r    (MARH-CEN1-MARH-B)
+h   o   u   s   e   r    (MARH-CEN1-MARH-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+a   l   a   n    (MARH-CEN2-MARH-B)
+a   l   a   n    (MARH-CEN2-MARH-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+fifty two nineteen  (MARH-CEN3-MARH-B)
+fifty two nineteen  (MARH-CEN3-MARH-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+c   e   n   t   r   e    (MARH-CEN4-MARH-B)
+c   e   n   t   r   e    (MARH-CEN4-MARH-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   i   t   t   s   b   u   r   g   h    (MARH-CEN5-MARH-B)
+p   i   t   t   s   b   u   r   g   h    (MARH-CEN5-MARH-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two three two  (MARH-CEN6-MARH-B)
+one five two three two  (MARH-CEN6-MARH-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+six eight three six zero two seven  (MARH-CEN7-MARH-B)
+six eight three six zero two seven  (MARH-CEN7-MARH-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+may second nineteen sixty five  (MARH-CEN8-MARH-B)
+may second nineteen sixty five  (MARH-CEN8-MARH-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter seven one five four  (MDMS2-AN401-MDMS2-B)
+enter seven one five four  (MDMS2-AN401-MDMS2-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+no   (MDMS2-AN402-MDMS2-B)
+no   (MDMS2-AN402-MDMS2-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+g   f   t   u   one three three two  (MDMS2-AN403-MDMS2-B)
+g   f   t   u   one three three two  (MDMS2-AN403-MDMS2-B)
+Words: 8 Correct: 8 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+l   k   k   M   thirty eight  (MDMS2-AN404-MDMS2-B)
+l   k   k   N   thirty eight  (MDMS2-AN404-MDMS2-B)
+Words: 6 Correct: 5 Errors: 1 Percent correct = 83.33% Error = 16.67% Accuracy = 83.33%
+Insertions: 0 Deletions: 0 Substitutions: 1
+rubout v   z   j   h   p   seven thirty six  (MDMS2-AN405-MDMS2-B)
+rubout v   z   j   h   p   seven thirty six  (MDMS2-AN405-MDMS2-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+s   a   n   d   l   e   r    (MDMS2-CEN1-MDMS2-B)
+s   a   n   d   l   e   r    (MDMS2-CEN1-MDMS2-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+d   a   v   i   d    (MDMS2-CEN2-MDMS2-B)
+d   a   v   i   d    (MDMS2-CEN2-MDMS2-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+two forty  (MDMS2-CEN3-MDMS2-B)
+two forty  (MDMS2-CEN3-MDMS2-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+OH  ONE U   R   EIGHT l   l   o   w   b   e   n   d    (MDMS2-CEN4-MDMS2-B)
+*** *** *** W   I     l   l   o   w   b   e   n   d    (MDMS2-CEN4-MDMS2-B)
+Words: 13 Correct: 8 Errors: 5 Percent correct = 61.54% Error = 38.46% Accuracy = 61.54%
+Insertions: 0 Deletions: 3 Substitutions: 2
+r   o   c   h   T   s   t   e   D   A   r    (MDMS2-CEN5-MDMS2-B)
+r   o   c   h   E   s   t   e   *** *** r    (MDMS2-CEN5-MDMS2-B)
+Words: 11 Correct: 8 Errors: 3 Percent correct = 72.73% Error = 27.27% Accuracy = 72.73%
+Insertions: 0 Deletions: 2 Substitutions: 1
+one four six one eight  (MDMS2-CEN6-MDMS2-B)
+one four six one eight  (MDMS2-CEN6-MDMS2-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+seven one six two four four six seven one four  (MDMS2-CEN7-MDMS2-B)
+seven one six two four four six seven one four  (MDMS2-CEN7-MDMS2-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+march seven nineteen sixty seven  (MDMS2-CEN8-MDMS2-B)
+march seven nineteen sixty seven  (MDMS2-CEN8-MDMS2-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter twenty one  (MENK-AN421-MENK-B)
+enter twenty one  (MENK-AN421-MENK-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter thirty  (MENK-AN422-MENK-B)
+enter thirty  (MENK-AN422-MENK-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+d   a   j   n   h   ninety six  (MENK-AN423-MENK-B)
+d   a   j   n   h   ninety six  (MENK-AN423-MENK-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+s   y   f   c   d   nine six oh  one seven  (MENK-AN424-MENK-B)
+s   y   f   c   d   nine six oh  one seven  (MENK-AN424-MENK-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter one seventy six  (MENK-AN425-MENK-B)
+enter one seventy six  (MENK-AN425-MENK-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+k   a   u   f   m   a   n    (MENK-CEN1-MENK-B)
+k   a   u   f   m   a   n    (MENK-CEN1-MENK-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+B   e   r   i   c    (MENK-CEN2-MENK-B)
+*** e   r   i   c    (MENK-CEN2-MENK-B)
+Words: 5 Correct: 4 Errors: 1 Percent correct = 80.00% Error = 20.00% Accuracy = 80.00%
+Insertions: 0 Deletions: 1 Substitutions: 0
+sixty six thirty three  (MENK-CEN3-MENK-B)
+sixty six thirty three  (MENK-CEN3-MENK-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+b   i   r   c   h   w   o   o   d    (MENK-CEN4-MENK-B)
+b   i   r   c   h   w   o   o   d    (MENK-CEN4-MENK-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   i   t   t   s   b   u   r   g   h    (MENK-CEN5-MENK-B)
+p   i   t   t   s   b   u   r   g   h    (MENK-CEN5-MENK-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two one seven  (MENK-CEN6-MENK-B)
+one five two one seven  (MENK-CEN6-MENK-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+four two one eight eight six oh   (MENK-CEN7-MENK-B)
+four two one eight eight six oh   (MENK-CEN7-MENK-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+five twenty seven sixty six  (MENK-CEN8-MENK-B)
+five twenty seven sixty six  (MENK-CEN8-MENK-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase a   b   f   n   q   fifty seven  (MIRY-AN396-MIRY-B)
+erase a   b   f   n   q   fifty seven  (MIRY-AN396-MIRY-B)
+Words: 8 Correct: 8 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+t   r   t   f   i   seven  (MIRY-AN397-MIRY-B)
+t   r   t   f   i   seven  (MIRY-AN397-MIRY-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+rubout c   b   w   x   v   four  (MIRY-AN398-MIRY-B)
+rubout c   b   w   x   v   four  (MIRY-AN398-MIRY-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+w   y   a   t   u   R   seventy seven seventy seven  (MIRY-AN399-MIRY-B)
+w   y   a   t   u   *** seventy seven seventy seven  (MIRY-AN399-MIRY-B)
+Words: 10 Correct: 9 Errors: 1 Percent correct = 90.00% Error = 10.00% Accuracy = 90.00%
+Insertions: 0 Deletions: 1 Substitutions: 0
+enter eight  (MIRY-AN400-MIRY-B)
+enter eight  (MIRY-AN400-MIRY-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+y   a   n   a   s   a   k    (MIRY-CEN1-MIRY-B)
+y   a   n   a   s   a   k    (MIRY-CEN1-MIRY-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+i   v   a   n    (MIRY-CEN2-MIRY-B)
+i   v   a   n    (MIRY-CEN2-MIRY-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+twelve thirty three  (MIRY-CEN3-MIRY-B)
+twelve thirty three  (MIRY-CEN3-MIRY-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+A   L   m   o   r   e   w   o   o   d    (MIRY-CEN4-MIRY-B)
+*** *** m   o   r   e   w   o   o   d    (MIRY-CEN4-MIRY-B)
+Words: 10 Correct: 8 Errors: 2 Percent correct = 80.00% Error = 20.00% Accuracy = 80.00%
+Insertions: 0 Deletions: 2 Substitutions: 0
+p   i   t   t   s   b   u   r   g   h    (MIRY-CEN5-MIRY-B)
+p   i   t   t   s   b   u   r   g   h    (MIRY-CEN5-MIRY-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two one three  (MIRY-CEN6-MIRY-B)
+one five two one three  (MIRY-CEN6-MIRY-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+two six eight four six nine four  (MIRY-CEN7-MIRY-B)
+two six eight four six nine four  (MIRY-CEN7-MIRY-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+J   N   ERASE   seventh nineteen sixty seven  (MIRY-CEN8-MIRY-B)
+*** *** JANUARY seventh nineteen sixty seven  (MIRY-CEN8-MIRY-B)
+Words: 7 Correct: 4 Errors: 3 Percent correct = 57.14% Error = 42.86% Accuracy = 57.14%
+Insertions: 0 Deletions: 2 Substitutions: 1
+enter seven  (MJGM-AN436-MJGM-B)
+enter seven  (MJGM-AN436-MJGM-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+a   b   v   j   ninety four  (MJGM-AN437-MJGM-B)
+a   b   v   j   ninety four  (MJGM-AN437-MJGM-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+rubout g   r   a   g   eighty five  (MJGM-AN438-MJGM-B)
+rubout g   r   a   g   eighty five  (MJGM-AN438-MJGM-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter five six eight  (MJGM-AN439-MJGM-B)
+enter five six eight  (MJGM-AN439-MJGM-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+stop  (MJGM-AN440-MJGM-B)
+stop  (MJGM-AN440-MJGM-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+m   y   e   r   s    (MJGM-CEN1-MJGM-B)
+m   y   e   r   s    (MJGM-CEN1-MJGM-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+j   L   h   n    (MJGM-CEN2-MJGM-B)
+j   O   h   n    (MJGM-CEN2-MJGM-B)
+Words: 4 Correct: 3 Errors: 1 Percent correct = 75.00% Error = 25.00% Accuracy = 75.00%
+Insertions: 0 Deletions: 0 Substitutions: 1
+two two six  (MJGM-CEN3-MJGM-B)
+two two six  (MJGM-CEN3-MJGM-B)
+Words: 3 Correct: 3 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+c   e   d   a   r   v   i   l   l   e    (MJGM-CEN4-MJGM-B)
+c   e   d   a   r   v   i   l   l   e    (MJGM-CEN4-MJGM-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   i   t   t   s   b   u   r   g   h    (MJGM-CEN5-MJGM-B)
+p   i   t   t   s   b   u   r   g   h    (MJGM-CEN5-MJGM-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two two four  (MJGM-CEN6-MJGM-B)
+one five two two four  (MJGM-CEN6-MJGM-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+six eight three three S   seven five  (MJGM-CEN7-MJGM-B)
+six eight three three OH  seven five  (MJGM-CEN7-MJGM-B)
+Words: 7 Correct: 6 Errors: 1 Percent correct = 85.71% Error = 14.29% Accuracy = 85.71%
+Insertions: 0 Deletions: 0 Substitutions: 1
+november ninth sixty five  (MJGM-CEN8-MJGM-B)
+november ninth sixty five  (MJGM-CEN8-MJGM-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter two nine eight one  (MJWL-AN391-MJWL-B)
+enter two nine eight one  (MJWL-AN391-MJWL-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+repeat  (MJWL-AN392-MJWL-B)
+repeat  (MJWL-AN392-MJWL-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase u   d   b   e   five  (MJWL-AN393-MJWL-B)
+erase u   d   b   e   five  (MJWL-AN393-MJWL-B)
+Words: 6 Correct: 6 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+rubout u   b   u   t   r   six  (MJWL-AN394-MJWL-B)
+rubout u   b   u   t   r   six  (MJWL-AN394-MJWL-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+enter one oh  four  (MJWL-AN395-MJWL-B)
+enter one oh  four  (MJWL-AN395-MJWL-B)
+Words: 4 Correct: 4 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+l   e   v   i   s   o   n    (MJWL-CEN1-MJWL-B)
+l   e   v   i   s   o   n    (MJWL-CEN1-MJWL-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+j   e   f   f   r   e   y    (MJWL-CEN2-MJWL-B)
+j   e   f   f   r   e   y    (MJWL-CEN2-MJWL-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+nineteen  (MJWL-CEN3-MJWL-B)
+nineteen  (MJWL-CEN3-MJWL-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+p   h   i   n   n   e   y    (MJWL-CEN4-MJWL-B)
+p   h   i   n   n   e   y    (MJWL-CEN4-MJWL-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+l   e   x   i   n   g   t   o   n    (MJWL-CEN5-MJWL-B)
+l   e   x   i   n   g   t   o   n    (MJWL-CEN5-MJWL-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+oh  two one seven THIRTY  (MJWL-CEN6-MJWL-B)
+oh  two one seven THREE   (MJWL-CEN6-MJWL-B)
+Words: 5 Correct: 4 Errors: 1 Percent correct = 80.00% Error = 20.00% Accuracy = 80.00%
+Insertions: 0 Deletions: 0 Substitutions: 1
+eight six two oh  three eight seven  (MJWL-CEN7-MJWL-B)
+eight six two oh  three eight seven  (MJWL-CEN7-MJWL-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+june eighteenth nineteen sixty eight  (MJWL-CEN8-MJWL-B)
+june eighteenth nineteen sixty eight  (MJWL-CEN8-MJWL-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+x   k   i   t   b   two six one one  (MMXG-AN441-MMXG-B)
+x   k   i   t   b   two six one one  (MMXG-AN441-MMXG-B)
+Words: 9 Correct: 9 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+yes  (MMXG-AN442-MMXG-B)
+yes  (MMXG-AN442-MMXG-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+no   (MMXG-AN443-MMXG-B)
+no   (MMXG-AN443-MMXG-B)
+Words: 1 Correct: 1 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+erase k   m   h   M   i   six oh  five  (MMXG-AN444-MMXG-B)
+erase k   m   h   N   i   six oh  five  (MMXG-AN444-MMXG-B)
+Words: 9 Correct: 8 Errors: 1 Percent correct = 88.89% Error = 11.11% Accuracy = 88.89%
+Insertions: 0 Deletions: 0 Substitutions: 1
+erase f   o   x   k   E   eight  (MMXG-AN445-MMXG-B)
+erase f   o   x   k   *** eight  (MMXG-AN445-MMXG-B)
+Words: 7 Correct: 6 Errors: 1 Percent correct = 85.71% Error = 14.29% Accuracy = 85.71%
+Insertions: 0 Deletions: 1 Substitutions: 0
+g   i   n   s   b   U   r   g    (MMXG-CEN1-MMXG-B)
+g   i   n   s   b   E   r   g    (MMXG-CEN1-MMXG-B)
+Words: 8 Correct: 7 Errors: 1 Percent correct = 87.50% Error = 12.50% Accuracy = 87.50%
+Insertions: 0 Deletions: 0 Substitutions: 1
+m   i   c   h   a   e   l    (MMXG-CEN2-MMXG-B)
+m   i   c   h   a   e   l    (MMXG-CEN2-MMXG-B)
+Words: 7 Correct: 7 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+a   seven  (MMXG-CEN3-MMXG-B)
+a   seven  (MMXG-CEN3-MMXG-B)
+Words: 2 Correct: 2 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+m   a   r   g   a   U   r   e   t   m   o   r   r   i   s   o   n    (MMXG-CEN4-MMXG-B)
+m   a   r   g   a   *** r   e   t   m   o   r   r   i   s   o   n    (MMXG-CEN4-MMXG-B)
+Words: 17 Correct: 16 Errors: 1 Percent correct = 94.12% Error = 5.88% Accuracy = 94.12%
+Insertions: 0 Deletions: 1 Substitutions: 0
+p   i   t   t   s   b   u   r   g   h    (MMXG-CEN5-MMXG-B)
+p   i   t   t   s   b   u   r   g   h    (MMXG-CEN5-MMXG-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+one five two one three  (MMXG-CEN6-MMXG-B)
+one five two one three  (MMXG-CEN6-MMXG-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+four one two two six eight four one four two  (MMXG-CEN7-MMXG-B)
+four one two two six eight four one four two  (MMXG-CEN7-MMXG-B)
+Words: 10 Correct: 10 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+october twenty four nineteen seventy  (MMXG-CEN8-MMXG-B)
+october twenty four nineteen seventy  (MMXG-CEN8-MMXG-B)
+Words: 5 Correct: 5 Errors: 0 Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+Insertions: 0 Deletions: 0 Substitutions: 0
+TOTAL Words: 797 Correct: 751 Errors: 47
+TOTAL Percent correct = 94.23% Error = 5.90% Accuracy = 94.10%
+TOTAL Insertions: 1 Deletions: 25 Substitutions: 21

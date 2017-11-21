@@ -10,26 +10,26 @@ import StoreResults as dump
 from os import path
 from pocketsphinx.pocketsphinx import *
 from sphinxbase.sphinxbase import *
+
 # Define parameters
-ExpName = "an4"    
+ExpName = "TIMIT"    
 #SNR_Level = "White50db"
 
 BaseDir = "/Users/Azhar/Desktop/MDC_Experiments/" + ExpName + "/"
-TestFileIds = BaseDir + "an4_test.fileids"
-BaseWavPath = "/Users/Azhar/Desktop/Exp2/an4/"
-ModelsPath = BaseDir + "an4/AN4_AM/";
-AcModel0 ="an4_Clean.cd_cont_200";
-AcModel20 ="an4_White20dB.cd_cont_200";
-AcModel15 ="an4_White15dB.cd_cont_200";
-AcModel10 ="an4_White10dB.cd_cont_200";
-AcModel = [AcModel0, AcModel20,AcModel15,AcModel10]
-TotalNoOfFiles = 130
-LM = BaseDir + "an4.lm"
-Dic = BaseDir + "an4.dic"
+TestFileIds = BaseDir + ExpName+"_test.fileids"
+BaseWavPath = "/Users/Azhar/Desktop/Exp1/timit/"
+AcModel0 =ExpName+"_Clean.cd_cont_200";
+AcModel20 =ExpName+"_20dB.cd_cont_200";
+AcModel15 =ExpName+"_15dB.cd_cont_200";
+AcModel10 =ExpName+"_10dB.cd_cont_200";
+AcModel = [AcModel0, AcModel10, AcModel15, AcModel20]
+ModelsDir = BaseDir + ExpName+"_Models/"
+LM = ModelsDir + "timit_test.lm"
+Dic = ModelsDir + "timit.dic"
 
 # Create a decoder with certain model
 for currentModel in AcModel:
-    AM = BaseDir + "AN4_AM/" + currentModel
+    AM = ModelsDir + currentModel
     print "Acoustic Model: " + AM
     print "Language Model: " + LM
     print "Dictionary: " + Dic
@@ -47,9 +47,9 @@ for currentModel in AcModel:
         if snr == 0:
             ExpWavPath = BaseWavPath + "wav/"
             outDir = BaseDir+"Results/Clean/" + currentModel + "/"
-            wavext = ".sph"
+            wavext = ".wav"
         else:
-            ExpWavPath = BaseWavPath + "wavWhite" + str(snr) + "db/"
+            ExpWavPath = BaseWavPath + "wav" + str(snr) + "db/"
             outDir = BaseDir+"Results/Noisy_" + str(snr) + "db/" + currentModel + "/"
             wavext = ".wav"
             
@@ -77,9 +77,13 @@ for currentModel in AcModel:
             for AudioFile_rp in fp:
                 decoder.start_utt()
                 xx = AudioFile_rp.strip('\n')
-                fNameOnly = xx[::-1].replace("/", "-", 1)[::-1]
-                fNameOnly = fNameOnly.split('/', 1)[-1]
-                AudioFile = ExpWavPath + xx + wavext
+                # Remove last white space
+                fNameOnly = xx.strip()
+#                 This is only required for an4                
+                #fNameOnly = xx[::-1].replace("/", "-", 1)[::-1]
+                #fNameOnly = fNameOnly.split('/', 1)[-1]
+                AudioFile = ExpWavPath + fNameOnly + wavext
+
                 # print ("Decoding File: " +AudioFile)
                 # print "File Name Only: " + fNameOnly
                 stream = open(AudioFile, 'rb')
@@ -91,12 +95,19 @@ for currentModel in AcModel:
                         break
                 decoder.end_utt()
                 hypothesis = decoder.hyp()
-                HypText.append(hypothesis.hypstr + " (" + fNameOnly + ")\n") 
+                # Extract UttId from fNameOnly to be written in Hyp file
+                UttId = fNameOnly
+                UttId = UttId[::-1].replace("/", "-", 1)[::-1]
+                UttId = UttId.split('/', 2)[-1]
+                
+                HypText.append(hypothesis.hypstr + " (" + UttId + ")\n") 
                 FinalResult = {"Name":fNameOnly, "Hyp": hypothesis.hypstr, "Score": hypothesis.best_score, "Confidence": hypothesis.prob}
                 ListOfFinalResults.append(FinalResult)
-                # print 'Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", hypothesis.prob
-                decoder.get_lattice().write(outLattice + fNameOnly + '.lat')
-                decoder.get_lattice().write_htk(outLattice + fNameOnly + '.htk')
+                #print 'Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", hypothesis.prob
+                LatticeFile = outLattice + fNameOnly.replace("/",'-')
+                #print 'LatticeFile: ' + LatticeFile
+                decoder.get_lattice().write(LatticeFile + '.lat')
+                decoder.get_lattice().write_htk(LatticeFile + '.htk')
                 sys.stdout.write("*")
         # Running perl WER test
         print "\n"
