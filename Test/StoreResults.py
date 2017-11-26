@@ -8,6 +8,7 @@ def CSVDictWrite(Hyp,CSVfileName):
             wr.writeheader()
             wr.writerows(Hyp)
 
+
 def TextWrite(HypList, FileName):
     with open(FileName, mode = 'wt' ) as myfile:
         for i in HypList:
