@@ -11,7 +11,7 @@ import subprocess
 
 
 ExpName = 'an4'
-
+whichScore = 'c'
 if(ExpName == 'an4'):
     an4_addition = '_White'
 else:
@@ -62,6 +62,7 @@ for snr_level in range(0,55,5):
     # For each utterance, starting from 1 to skip CSV headers
     Headers = ResultClean[0]
     print('Headers: ' + str(Headers))
+    conf_ind = 1
     score_ind= 2
     fName_ind = 3
     hyp_ind = 0
@@ -73,11 +74,15 @@ for snr_level in range(0,55,5):
         hypList.append(Result10[i][hyp_ind])
         hypList.append(Result15[i][hyp_ind])
         hypList.append(Result20[i][hyp_ind])
+        if(whichScore == 's'):
+            ind = score_ind
+        if(whichScore == 'c'):
+            ind = conf_ind
         
-        ScoreList.append(ResultClean[i][score_ind]) # if bestScoreInd = 0
-        ScoreList.append(Result10[i][score_ind])    # if bestScoreInd = 1
-        ScoreList.append(Result15[i][score_ind])    # if bestScoreInd = 2
-        ScoreList.append(Result20[i][score_ind])    # if bestScoreInd = 3
+        ScoreList.append(ResultClean[i][ind]) # if bestScoreInd = 0
+        ScoreList.append(Result10[i][ind])    # if bestScoreInd = 1
+        ScoreList.append(Result15[i][ind])    # if bestScoreInd = 2
+        ScoreList.append(Result20[i][ind])    # if bestScoreInd = 3
         bestScoreInd = ScoreList.index(max(ScoreList))
         
         # Best Hypothesis
@@ -98,6 +103,7 @@ for snr_level in range(0,55,5):
     dump.TextWrite(BestHypo, MDC_Hyp)
     
     print 'Finish, now Calculating Error Rate, please wait \n'
+    print('Input: ' + snr)
     RefFile = BaseDir+"RefClean.txt"
     out_File = outDir+"Clean_MDC_WERReslts.txt"
     perl_script = subprocess.Popen(["perl", "./word_align.pl",'-silent',MDC_Hyp, RefFile, out_File])

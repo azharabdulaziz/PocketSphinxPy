@@ -2,8 +2,6 @@
 import sys
 import subprocess
 from subprocess import Popen, PIPE
-import Error_calc
-import my_Error_calc
 import StoreResults as dump
 from os import environ, path
 from pocketsphinx.pocketsphinx import *
