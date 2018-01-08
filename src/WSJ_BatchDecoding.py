@@ -12,23 +12,23 @@ from sphinxbase.sphinxbase import *
 
 
 # Define parameters
-ExpName = "PDAmDigits"    
+ExpName = "WSJ"    
 #SNR_Level = "White50db"
 TotalNoOfFiles = 35
 BaseDir = "/Users/Azhar/Desktop/MDC_Experiments/" + ExpName + "/"
 TestFileIds = BaseDir + ExpName+"_test.fileids"
-BaseWavPath = "/Users/Azhar/Desktop/Exp6_PDAmDIGITs/PDAmDigits/"
-AcModel0 ="Clean.ci_cont";
-AcModel20 =ExpName+"_20dB.ci_cont";
-AcModel15 =ExpName+"_15dB.cd_cont";
-AcModel10 =ExpName+"_10dB.cd_cont";
+BaseWavPath = "/Users/Azhar/Desktop/Exp5_WSJ/PDAm/"
+AcModel0 ="Clean.cd_cont_200";
+AcModel20 ="White20dB.cd_cont_200";
+AcModel15 ="White15dB.cd_cont_200";
+AcModel10 ="White10dB.cd_cont_200";
 AcModel = [AcModel0, AcModel10, AcModel15, AcModel20]
 ModelsDir = BaseDir + ExpName+"_Models/"
 LM = ModelsDir + "PDAm.lm.DMP"
 Dic = ModelsDir + "PDAm.dic"
 
 # Create a decoder with certain model
-currentModel = AcModel[0]
+currentModel = AcModel[3]
 AM = ModelsDir + currentModel
 print 'Model is: ' + AM
 print "Acoustic Model: " + AM
@@ -40,6 +40,7 @@ config.set_string('-logfn', '/dev/null')
 config.set_string('-hmm', path.join(AM))
 config.set_string('-lm', path.join(LM))
 config.set_string('-dict', path.join(Dic))
+#sys.exit('HHHHHHHHHHHHHHHHHHHHH')
 decoder = Decoder(config)
 
 # Start reading Test list

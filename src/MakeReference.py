@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 import StoreResults as dump
-ExpName = "PDAmDigits"    
+ExpName = "WSJ"    
 #SNR_Level = "White50db"
 TotalNoOfFiles = 35
 BaseDir = "/Users/Azhar/Desktop/MDC_Experiments/" + ExpName + "/"
@@ -12,8 +12,11 @@ with open(inputFile,'r') as inFile, open(outFile,'w') as out:
     flag = False
     for line in lines:
         if(flag):
-            line = line.split('/',1)[-1]
-            line = line
+            uttID = line.split('/',1)[-1]
+            uttID = "(" + uttID.split(' ',1)[0] + ")"
+            uttID = uttID.replace('/','-')
+            uttID = uttID.replace('_1','_5')
+            line = line.split('(',1)[0] + uttID +'\n'
             outString.append(line)
             flag = False
         

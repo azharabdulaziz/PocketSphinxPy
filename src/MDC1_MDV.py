@@ -2,7 +2,7 @@
 """
 Introduction
 This function reads the decoder results csv file in MDC_Experiment directory. Then,for each $TestFile it compares the score of the four modules.
-This approach is Multiple decoder voting based on Score only
+This approach is Multiple decoder voting MDV based on Score only
 """
 
 import csv
