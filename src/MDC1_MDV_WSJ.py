@@ -1,3 +1,8 @@
+'''
+Created on Feb 2, 2018
+
+@author: Azhar
+'''
 #!/usr/bin/python2.7
 """
 Introduction
@@ -11,24 +16,20 @@ import StoreResults as dump
 import subprocess
 
 
-ExpName = 'an4'
+ExpName = 'wsj'
 
-if(ExpName == 'an4'):
-    an4_addition = '_White'
-else:
-    an4_addition ='_'
 BaseDir = "/Users/Azhar/Desktop/MDC_Experiments/" + ExpName + "/"
-AcModel0 =ExpName+"_Clean.cd_cont_200";
-AcModel20 =ExpName+an4_addition+"20dB.cd_cont_200";
-AcModel15 =ExpName+an4_addition+"15dB.cd_cont_200";
-AcModel10 =ExpName+an4_addition+"10dB.cd_cont_200";
+AcModel0 ="Clean.cd_cont_200";
+AcModel20 ="White20dB.cd_cont_200";
+AcModel15 ="White15dB.cd_cont_200";
+AcModel10 ="White10dB.cd_cont_200";
 AcModel = [AcModel0, AcModel10, AcModel15, AcModel20]
 Hyp=[]
 Conf = []
 Score = []
 TestFile = []
 
-for snr_level in range(0,55,5):
+for snr_level in range(5,55,5):
     if(snr_level == 0):
         snr = 'Clean/'
     else:
@@ -47,6 +48,12 @@ for snr_level in range(0,55,5):
         AM10Reader = csv.reader(AM_10)
         AM15Reader = csv.reader(AM_15)
         AM20Reader = csv.reader(AM_20)
+        
+        next(CleanReader, None)  # skip the headers
+        next(AM10Reader, None)  # skip the headers
+        next(AM15Reader, None)  # skip the headers
+        next(AM20Reader, None)  # skip the headers
+        
         ResultClean = list(CleanReader)
         Result10 = list(AM10Reader)
         Result15 = list(AM15Reader)
@@ -56,13 +63,12 @@ for snr_level in range(0,55,5):
     TotalNoOfFiles = len(ResultClean)
     print('TotalNoOfFiles = ' + str(TotalNoOfFiles))
     # For each utterance, starting from 1 to skip CSV headers
-    Headers = ResultClean[0]
-    print('Headers: ' + str(Headers))
+    
     score_ind= 2   # 1 Confidence   2 Score
     fName_ind = 3
     hyp_ind = 0
     BestHypo = []
-    for i in range(1,TotalNoOfFiles):
+    for i in range(0,TotalNoOfFiles):
         ScoreList = []
         hypList = []
         hypList.append(ResultClean[i][hyp_ind])
@@ -89,12 +95,12 @@ for snr_level in range(0,55,5):
     
     
     #print best_utt
-    MDC_Hyp = outDir+"MDC_Result_Confidence.txt"
+    MDC_Hyp = outDir+"MDC_Result_Score.txt"
     print("\n Writing MDC results in " + MDC_Hyp)
     dump.TextWrite(BestHypo, MDC_Hyp)
     
     print 'Finish, now Calculating Error Rate, please wait \n'
     RefFile = BaseDir+"RefClean.txt"
-    out_File = outDir+"Clean_MDC_Confidence_WERReslts.txt"
+    out_File = outDir+"Aligned_MDC_Score_WERReslts.txt"
     perl_script = subprocess.Popen(["perl", "./word_align.pl",'-silent',MDC_Hyp, RefFile, out_File])
     perl_script.wait()

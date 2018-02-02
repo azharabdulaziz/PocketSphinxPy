@@ -8,15 +8,16 @@ import StoreResults as dump
 from os import path
 from pocketsphinx.pocketsphinx import *
 from sphinxbase.sphinxbase import *
-from _codecs import decode
-from src.AN4_BatchDecode import decoder
+
+
+
 
 
 
 # Define parameters
 ExpName = "PDAmDigits" 
 # Do you want to decode raw audio or features  
-featORwav = 'feat'
+featORwav = 'wav'
 #############################################################
 if(featORwav == 'feat'):
     file_extension = '.mfc'
@@ -47,22 +48,24 @@ print ("Language Model: " + LM)
 print ("Dictionary: " + Dic)
 #sys.exit("HHHHHHHHHHHHHHHHHHHHH")
 config = Decoder.default_config()
-#config.set_string('-logfn', '/dev/null')
+#config.set_string('-logfn', '/dev/null') # to store log to file set 'logFileName.log'
 config.set_string('-hmm', path.join(AM))
 config.set_string('-lm', path.join(LM))
 config.set_string('-dict', path.join(Dic))
 config.set_string('-cmn', 'current')
+config.set_string('-varnorm','no')
+
 #sys.exit('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH')
 decoder = Decoder(config)
 
 # Start reading Test list
 # SNR_Level = ["wav", "wavWhite5db",]
 
-for snr in range(0,55,5):
+for snr in range(30,55,5):
     print "\n Input SNR: "+ str(snr) +"    AM: "+ AM
     print 'Start Processing ........\n'
-    print '**************************************************************************************************'
-    print '0%                                               50%                                          100%'
+    print '**********************************************************************'
+    print '0%                            50%                                 100%'
     if snr == 0:
         ExpWavPath = BaseWavPath
         outDir = BaseDir+"Results/Clean/" + currentModel + "/"
@@ -96,7 +99,7 @@ for snr in range(0,55,5):
         ListOfFinalResults = []
         HypText = []
         for AudioFile_rp in fp:
-            decoder.start_utt()
+            
             xx = AudioFile_rp.strip('\n')
             # Remove last white space
             fNameOnly = xx.strip()
@@ -107,12 +110,15 @@ for snr in range(0,55,5):
     
             #print ("Decoding File: " +AudioFile)
             # print "File Name Only: " + fNameOnly
+            
             stream = open(AudioFile, 'rb')
+            decoder.start_utt()
             while True:
                 buf = stream.read(1024)
                 if buf:
-                    #decoder.process_raw(buf, False, False)
-                    decoder.process_raw(buf, False, False)
+                    
+                    decoder.process_raw(buf, False, True)
+                    #decoder.process_cep(buf, False, False)
                 
                 else:
                     break
@@ -122,15 +128,18 @@ for snr in range(0,55,5):
             UttId = fNameOnly
             UttId = UttId[::-1].replace("/", "-", 1)[::-1]
             UttId = UttId.split('/', 2)[-1]
+            print ("File: "+ fNameOnly) 
             #print fNameOnly
+            hypo = hypothesis
+            print (hypo)
             HypText.append(hypothesis.hypstr + " (" + UttId + ")\n") 
             FinalResult = {"Name":fNameOnly, "Hyp": hypothesis.hypstr, "Score": hypothesis.best_score, "Confidence": hypothesis.prob}
             ListOfFinalResults.append(FinalResult)
             #print 'Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", hypothesis.prob
             LatticeFile = outLattice + fNameOnly.replace("/",'-')
             #print 'LatticeFile: ' + LatticeFile
-            decoder.get_lattice().write(LatticeFile + '.lat')
-            decoder.get_lattice().write_htk(LatticeFile + '.htk') 
+            #decoder.get_lattice().write(LatticeFile + '.lat')
+            #decoder.get_lattice().write_htk(LatticeFile + '.htk') 
             i=i+1
             k=k+1
             sys.stdout.write('**')

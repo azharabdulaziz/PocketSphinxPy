@@ -12,7 +12,7 @@ from sphinxbase.sphinxbase import *
 
 
 # Define parameters
-ExpName = "WSJ"    
+ExpName = "wsj"    
 #SNR_Level = "White50db"
 TotalNoOfFiles = 35
 BaseDir = "/Users/Azhar/Desktop/MDC_Experiments/" + ExpName + "/"
@@ -49,8 +49,8 @@ decoder = Decoder(config)
 for snr in range(0,55,5):
     print "\n Input SNR: "+ str(snr) +"    AM: "+ AM
     print 'Start Processing ........\n'
-    print '**************************************************************************************************'
-    print '0%                                               50%                                          100%'
+    print '************************************************************************************************************************************'
+    print '0%                                                               50%                                                            100%'
     if snr == 0:
         ExpWavPath = BaseWavPath + "wav/"
         outDir = BaseDir+"Results/Clean/" + currentModel + "/"
@@ -94,7 +94,7 @@ for snr in range(0,55,5):
             AudioFile = ExpWavPath + fNameOnly + wavext
     
             #print ("Decoding File: " +AudioFile)
-            # print "File Name Only: " + fNameOnly
+            #print "File Name Only: " + fNameOnly
             stream = open(AudioFile, 'rb')
             while True:
                 buf = stream.read(1024)
@@ -108,15 +108,15 @@ for snr in range(0,55,5):
             UttId = fNameOnly
             UttId = UttId[::-1].replace("/", "-", 1)[::-1]
             UttId = UttId.split('/', 2)[-1]
-            #print fNameOnly
-            HypText.append(hypothesis.hypstr + " (" + UttId + ")\n") 
-            FinalResult = {"Name":fNameOnly, "Hyp": hypothesis.hypstr, "Score": hypothesis.best_score, "Confidence": hypothesis.prob}
+            #print UttId
+            HypText.append(hypothesis.hypstr + " (" + UttId + ")\n")
+            FinalResult = {"Name":UttId, "Hyp": hypothesis.hypstr, "Score": hypothesis.best_score, "Confidence": hypothesis.prob}
             ListOfFinalResults.append(FinalResult)
             #print 'Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", hypothesis.prob
-            LatticeFile = outLattice + fNameOnly.replace("/",'-')
+            #LatticeFile = outLattice + fNameOnly.replace("/",'-')
             #print 'LatticeFile: ' + LatticeFile
-            decoder.get_lattice().write(LatticeFile + '.lat')
-            decoder.get_lattice().write_htk(LatticeFile + '.htk') 
+            #decoder.get_lattice().write(LatticeFile + '.lat')
+            #decoder.get_lattice().write_htk(LatticeFile + '.htk') 
             i=i+1
             k=k+1
             sys.stdout.write('*')
@@ -126,7 +126,7 @@ for snr in range(0,55,5):
             sys.stdout.flush()
     # Running perl WER test
     print "\n"
-    
+    #print("Storing at "+outDir+"/All_"+currentModel+".csv")
     dump.TextWrite(HypText, outDir+currentModel+".txt")
     dump.CSVDictWrite(ListOfFinalResults, outDir+"/All_"+currentModel+".csv")
     hypFile = outDir+currentModel+".txt" 

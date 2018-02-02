@@ -75,6 +75,7 @@ with open(TestFileIds) as fp:
         #decoder.get_lattice().write('goforward.lat')
         #decoder.get_lattice().write_htk('goforward.htk')
 
+
 print "\n Finish Decoding Test Files."
 dump.TextWrite(HypText, "Hyp")
 dump.CSVDictWrite(ListOfFinalResults, "CSVTest")
