@@ -15,6 +15,7 @@ import csv
 import StoreResults as dump
 import subprocess
 
+gamma = 0.9
 
 ExpName = 'PDAmDigits'
 
@@ -81,11 +82,13 @@ for snr_level in range(5,55,5):
         hypList.append(Result10[i][hyp_ind])
         hypList.append(Result15[i][hyp_ind])
         hypList.append(Result20[i][hyp_ind])
+        #x = float(ResultClean[i][score_ind]) + float(logProb[i][3])
+        #print("LogProb: " + str(x))
         
-        ScoreList.append(ResultClean[i][score_ind] + logProb[i][3]) # if bestScoreInd = 0
-        ScoreList.append(Result10[i][score_ind] + logProb[i][0])    # if bestScoreInd = 1
-        ScoreList.append(Result15[i][score_ind] + logProb[i][1])    # if bestScoreInd = 2
-        ScoreList.append(Result20[i][score_ind] + logProb[i][2])    # if bestScoreInd = 3
+        ScoreList.append(gamma*float(ResultClean[i][score_ind]) +(1-gamma)*float(logProb[i][3])) # if bestScoreInd = 0
+        ScoreList.append(gamma*float(Result10[i][score_ind]) + (1-gamma)*float(logProb[i][0]))    # if bestScoreInd = 1
+        ScoreList.append(gamma*float(Result15[i][score_ind]) + (1-gamma)*float(logProb[i][1]))    # if bestScoreInd = 2
+        ScoreList.append(gamma*float(Result20[i][score_ind]) + (1-gamma)*float(logProb[i][2]))    # if bestScoreInd = 3
         bestScoreInd = ScoreList.index(min(ScoreList))
         
         # Best Hypothesis
@@ -98,6 +101,7 @@ for snr_level in range(5,55,5):
     
     
     #print best_utt
+    
     MDC_Hyp = outDir+"MDC_Result_Score.txt"
     print("\n Writing MDC results in " + MDC_Hyp)
     dump.TextWrite(BestHypo, MDC_Hyp)

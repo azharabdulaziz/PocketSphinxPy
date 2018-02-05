@@ -76,10 +76,10 @@ for snr_level in range(5,55,5):
         hypList.append(Result15[i][hyp_ind])
         hypList.append(Result20[i][hyp_ind])
         
-        ScoreList.append(ResultClean[i][score_ind]) # if bestScoreInd = 0
-        ScoreList.append(Result10[i][score_ind])    # if bestScoreInd = 1
-        ScoreList.append(Result15[i][score_ind])    # if bestScoreInd = 2
-        ScoreList.append(Result20[i][score_ind])    # if bestScoreInd = 3
+        ScoreList.append(float(ResultClean[i][score_ind])) # if bestScoreInd = 0
+        ScoreList.append(float(Result10[i][score_ind]))    # if bestScoreInd = 1
+        ScoreList.append(float(Result15[i][score_ind]))    # if bestScoreInd = 2
+        ScoreList.append(float(Result20[i][score_ind]))    # if bestScoreInd = 3
         bestScoreInd = ScoreList.index(max(ScoreList))
         
         # Best Hypothesis

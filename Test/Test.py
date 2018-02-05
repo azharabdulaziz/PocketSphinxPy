@@ -1,4 +1,5 @@
 #!/usr/bin/python2.7
+'''
 import sys
 import subprocess
 from subprocess import Popen, PIPE
@@ -6,9 +7,15 @@ import StoreResults as dump
 from os import environ, path
 from pocketsphinx.pocketsphinx import *
 from sphinxbase.sphinxbase import *
+'''
+from os import environ, path
+import sys
+
+from pocketsphinx.pocketsphinx import *
+from sphinxbase.sphinxbase import *
 
 
-#AudioFile = "/Users/Azhar/Desktop/Exp2/an4/wav/an4test_clstk/menk/an422-menk-b.sph"
+AudioFile = "/Users/Azhar/Desktop/Exp2/an4/wav/an4test_clstk/menk/an422-menk-b.sph"
 # Define parameters
 ExpName = "an4"    
 #SNR_Level = "White50db"
@@ -41,32 +48,43 @@ decoder = Decoder(config)
 # Start reading Test list
 print "Decoding Test Audio Files"
 i=0
-with open(TestFileIds) as fp:
-    FinalResult = {}
-    ListOfFinalResults = []
-    HypText = []
-    for AudioFile_rp in fp:
-        decoder.start_utt()
-        xx = AudioFile_rp.strip('\n')
-        fNameOnly=xx[::-1].replace("/","-",1)[::-1]
-        fNameOnly = fNameOnly.split('/',1)[-1]
-        AudioFile = BaseWavPath + xx + ".sph"
-        #print ("Decoding File: " +AudioFile)
-        #print "File Name Only: " + fNameOnly
-        i=i+1
-        completed = (i/TotalNoOfFiles)
-        s = "Processing " + str(completed) + " %"
-        sys.stdout.write("*") 
-        
-        
-        stream = open(AudioFile, 'rb')
-        while True:
-            buf = stream.read(1024)
-            if buf:
-                decoder.process_raw(buf, False, False)
-            else:
-                break
-        decoder.end_utt()
+#with open(TestFileIds) as fp:
+FinalResult = {}
+ListOfFinalResults = []
+HypText = []
+#for AudioFile_rp in fp:
+decoder.start_utt()
+'''
+xx = AudioFile_rp.strip('\n')
+fNameOnly=xx[::-1].replace("/","-",1)[::-1]
+fNameOnly = fNameOnly.split('/',1)[-1]
+AudioFile = BaseWavPath + xx + ".sph"
+#print ("Decoding File: " +AudioFile)
+#print "File Name Only: " + fNameOnly
+'''
+i=i+1
+completed = (i/TotalNoOfFiles)
+s = "Processing " + str(completed) + " %"
+sys.stdout.write("*") 
+
+
+stream = open(AudioFile, 'rb')
+while True:
+    buf = stream.read(1024)
+    if buf:
+        decoder.process_raw(buf, False, False)
+    else:
+        break
+decoder.end_utt()
+hypothesis = decoder.hyp()
+logmath = decoder.get_logmath()
+print ('Best hypothesis: ', hypothesis.hypstr, " model score: ", hypothesis.best_score, " confidence: ", logmath.exp(hypothesis.prob))
+
+decoder.seg()
+decoder.nbest()
+for best, i in zip(decoder.nbest(), range(10)):
+    print (best.hypstr, best.score)
+'''   
         hypothesis = decoder.hyp()
         HypText.append(hypothesis.hypstr + " (" + fNameOnly + ")\n") 
         FinalResult = {"Name":fNameOnly, "Hyp": hypothesis.hypstr, "Score": hypothesis.best_score, "Confidence": hypothesis.prob}
@@ -93,3 +111,4 @@ print perl_script.poll()
 # the_output = p.stdout.read()
 #Error_calc.CalculateWER(hypFile, RefFile)
 #my_Error_calc.CalcWER(hypFile, RefFile)
+'''
